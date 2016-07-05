@@ -4,7 +4,7 @@ An Android app for **rooted devices** that will automatically reboot your phone 
 
 ## Demo
 
-![alt tag](https://raw.github.com/eladnava/rebooty-android/master/assets/screenshot.png)
+![alt tag](https://raw.github.com/eladnava/rebooty-android/master/assets/preview.png)
 
 ## License
 
