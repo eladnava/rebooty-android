@@ -6,6 +6,9 @@
     <!-- Dialog Buttons -->
     <string name="ok">OK</string>
 
+    <!-- Menu -->
+    <string name="action_reboot">Reboot Now</string>
+
     <!-- No Root -->
     <string name="no_root">Device Not Rooted</string>
     <string name="no_root_desc">Your device is not rooted. You must root your device to use this application!</string>

@@ -4,8 +4,11 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.eladnava.rebooty.R;
+import com.eladnava.rebooty.logic.RebootHandler;
 import com.eladnava.rebooty.util.RebootScheduler;
 import com.stericson.RootShell.RootShell;
 
@@ -67,5 +70,26 @@ public class Main extends AppCompatActivity {
 
         // We're good!
         return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu - this adds items to the action bar if it is present
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks by ID
+        switch (item.getItemId()) {
+            // Reboot
+            case R.id.action_reboot:
+                RebootHandler.rebootPhone();
+                return true;
+        }
+
+        // Don't consume the event
+        return super.onOptionsItemSelected(item);
     }
 }
